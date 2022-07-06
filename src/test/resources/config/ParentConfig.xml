@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Parent Suite">
+    <parameter name="param" value="SuiteExample"></parameter>
+    <suite-files>
+        <!-- Suites are executed sequentially -->
+        <suite-file path="ConfigChrome.xml"/>
+        <suite-file path="ConfigFirefox.xml"/>
+    </suite-files>
+</suite>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="LocalSuite" parallel="false">
+
+    <test name="LocallyExecuted">
+        <parameter name="browser" value="chrome" />
+        <parameter name="destination" value="local" />
+        <classes>
+            <class name="gridtest.tests.Test1" />
+        </classes>
+    </test>
+
+</suite>

@@ -1,0 +1,23 @@
+# used to create all dockers already connected with : docker-compose up -d
+# use 'docker-compose scale ff=4' to get scaled number of nodes after those 3 are up
+# custom container names are not possible to scale - so use only for hub
+
+selenium-hub:
+  image: selenium/hub
+  container_name: hub
+  ports:
+    - "4444:4444"
+
+FF:
+  image: selenium/node-firefox
+  ports:
+    - 5900
+  links:
+    - selenium-hub:hub
+
+CH:
+  image: selenium/node-chrome
+  ports:
+    - 5900
+  links:
+    - selenium-hub:hub

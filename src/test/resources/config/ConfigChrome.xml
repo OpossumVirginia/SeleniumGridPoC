@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="ChromeSuite" parallel="tests">
+
+    <test name="ChromeTest1">
+        <parameter name="browser" value="chrome" />
+        <parameter name="destination" value="remote" />
+        <classes>
+            <class name="gridtest.tests.Test1" />
+        </classes>
+    </test>
+    <test name="ChromeTest2">
+        <parameter name="browser" value="chrome" />
+        <parameter name="destination" value="remote" />
+        <classes>
+            <class name="gridtest.tests.Test2" />
+        </classes>
+    </test>
+
+
+</suite>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FirefoxSuite" parallel="tests">
+
+    <test name="FirefoxTest1">
+        <parameter name="browser" value="firefox" />
+        <parameter name="destination" value="remote" />
+        <classes>
+            <class name="gridtest.tests.Test3" />
+        </classes>
+    </test>
+    <test name="FirefoxTest2">
+        <parameter name="browser" value="firefox" />
+        <parameter name="destination" value="remote" />
+        <classes>
+            <class name="gridtest.tests.Test4" />
+        </classes>
+    </test>
+
+</suite>
